@@ -1,0 +1,30 @@
+
+
+TCP (Transmission Control Protocol): The reliable delivery guy. TCP ensures data gets delivered correctly, in order, and without errors. Imagine it like a postal service that sends packages with tracking numbers and re-delivers lost ones.
+FTP (File Transfer Protocol): The file mover. FTP allows you to transfer files between computers on a network. It's like a specialized courier service for sending documents between locations.
+IP (Internet Protocol): The address finder. IP assigns unique addresses to devices on a network, like street addresses for houses. This helps data reach the correct destination.
+URL (Uniform Resource Locator): The website shortcut. A URL is the web address you type into your browser to find a website. It's like a GPS destination that tells you where to find a specific place online.
+DNS (Domain Name System): The phonebook for websites. DNS translates human-friendly website names (like [invalid URL removed]) into IP addresses that computers understand. Think of it like a phonebook that helps you find a person's phone number using their name.
+Data Packets on the Move:
+
+Header: The message label. A header is like an envelope on a letter containing information about the sender, recipient, and what's inside (the data).
+Payload: The actual message. The payload is the content inside the data packet, like the written message in a letter.
+Keeping Things Speedy:
+
+Cache: The memory booster. A cache stores frequently accessed data to reduce loading times. Think of it like a shelf where you keep commonly used items to grab them quickly instead of searching every time.
+The Teamwork Behind the Scenes (OSI Model):
+
+While not directly mentioned in your questions, understanding these layers is helpful for network communication:
+
+Physical Layer: The data highway. This layer handles the physical transmission of data through cables, fibers, or wireless signals. Imagine it like the roads, trucks, and postal workers that physically deliver mail.
+Data Link Layer: The package checker. This layer ensures data packets are delivered without errors on the local network. Think of it like a postal worker checking addresses and re-sealing packages if torn.
+Network Layer: The smart router. This layer routes data packets across different networks to reach their destination. Imagine it like a sorting center that determines the best route for each letter to reach its final address.
+Transport Layer: The reliable friend. This layer (where TCP lives) ensures complete and error-free data transfer between applications. Think of it like a postal service that guarantees all parts of a package arrive and are reassembled correctly.
+UDP (User Datagram Protocol):
+
+The speedy but unreliable option. Unlike TCP, UDP prioritizes speed over reliability. It sends data packets without confirmation, making it faster but less suitable for critical data transfers. Imagine it like sending a postcard - it arrives quickly, but there's no guarantee it will reach the destination.
+Pipelines (Bonus):
+
+While not directly related to network communication, pipelines are a common concept in computing:
+
+Think assembly line. Pipelines break down tasks into stages that work on different parts simultaneously, increasing efficiency. Imagine a car factory where different stages handle chassis assembly, painting, and engine installation concurrently.
