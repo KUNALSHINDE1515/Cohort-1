@@ -10,61 +10,125 @@ body {
   line-height: 1.6;
   color: #333;
 }
-
+:root{
+  --colorText:#8B4513;
+  --hoverColor: #000;
+  --btn:#c85706;
+  --text:#fff;
+}
 .header {
-  /* Define header styles here */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: auto;
+  padding: 10px 20px;
 }
 
 .logo {
-  /* Define logo styles here */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--colorText);
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .logo img {
-  /* Define image styles within the logo here */
+  margin-right: 10px;
+  border-radius: 30px;
+  border: 2px solid var(--colorText);
+  padding: 2px;
 }
 
 .nav-menu a {
-  /* Define navigation link styles here */
+ text-decoration: none;
+ list-style-type: none;
+ margin-inline: 10px;
+ color: var(--colorText);
 }
 
 .nav-menu a:hover {
-  /* Define hover styles for navigation links here */
+  color: var(--hoverColor);
 }
 
 .hero {
-  /* Define hero section styles here */
+ position: relative;
+  height: 65vh;
+  background-color: black;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero::before{
+  background-image: url(./assets/chaipatti.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  opacity: 0.3;
+  position: absolute;
+  inset: 0;
+  content: '';
+
 }
 
 .hero-text h1 {
-  /* Define styles for h1 in hero-text here */
+  position: relative;
+  font-size: 3rem;
+  margin-bottom: 15px;
 }
 
 .hero-text p {
-  /* Define styles for paragraph in hero-text here */
+ margin-bottom: 15px;
 }
 
 .shop-button {
-  /* Define shop button styles here */
+padding: 10px 20px;
+background-color: var(--btn);
+border: none;
+outline: none;
+color: var(--text);
+border-radius: 15px;
 }
 
 .shop-button:hover {
-  /* Define hover styles for shop button here */
+  background-color: aqua;
 }
 
 .tea-collection {
-  /* Define tea collection section styles here */
+text-align: center;
+margin-top: 5vh;
 }
 
 .tea-collection h2 {
-  /* Define styles for h2 in tea collection here */
+  color: var(--btn);
 }
 
 .tea-cards {
-  /* Define tea cards container styles here */
-}
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  gap: 25px ;
+  place-items: center;
+  }
+
 
 .tea-card {
-  /* Define styles for each tea card here */
+ height: 300px;
+ width: 250px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.45),
+ 25px 0px 20px -20px rgba(0,0,0,0.45),
+ 0px 25px 20px -20px rgba(0,0,0,0.45),
+ -25px 0px 20px -20px rgba(0,0,0,0.45);
 }
 
 .tea-card h3 {
