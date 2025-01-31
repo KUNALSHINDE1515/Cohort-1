@@ -9,65 +9,120 @@
 body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
+ 
 }
 
-/* Navbar styles */
 .navbar {
-  /* Add styles for navbar */
+  display: flex;
+  justify-content: space-between;
+  background-color: #333333;
+  padding: 30px;
+  align-items: center;
 }
 
 .logo {
-  /* Add styles for the logo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: 900;
 }
 
 .logo img {
-  /* Add styles for logo image */
+ border-radius: 50px;
 }
 
 .nav-links a {
-  /* Add styles for nav links */
+  color: #fff;
+  list-style-type: none;
+  text-decoration: none;
+  margin-inline: 5px;
+  cursor: pointer;
 }
 
 .nav-links a:hover {
-  /* Add hover styles for nav links */
+ color: #b5a6a6;
 }
 
 /* Hero section styles */
 .hero {
   /* Add styles for hero section */
+  background-repeat: no-repeat;
+  height: 85vh;
+  text-align: center;
+  position: relative;
+  background-color: #333333;
+  
+}
+.hero::before{
+  background-image: url(./assets/chaigym.png);
+  background-size: cover;
+  object-fit: cover;
+  content: '';
+  position: absolute;
+  inset: 0;
+  filter: brightness(50%);
+  opacity: 0.2;
+
 }
 
 .hero-content {
-  /* Add styles for hero content */
+padding-top: 10vh;
+color: #fff;
+margin-bottom: 10vh;
 }
 
 .hero-content h1 {
-  /* Add styles for hero heading */
+font-size: 3rem;
+margin-bottom: 15px;
 }
 
 .hero-content p {
   /* Add styles for hero paragraph */
+  margin-bottom: 15px;
 }
 
 .cta-button {
-  /* Add styles for CTA button */
+  padding: 10px 20px;
+  background-color: #FF7902;
+  color: #000;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .cta-button:hover {
-  /* Add hover styles for CTA button */
+ background-color: #fd76009e;
 }
 
 /* Features section styles */
 .features {
   /* Add styles for features section */
+      display: flex ;
+      align-items: center;
+      justify-content: space-around;
+      gap: 25px;
+      color: #fff;
+      margin-top: 10vh;
+      background-color: black;
+      padding: 20px;
+      width: 65vw;
+      margin: auto;
+      border-radius: 10px;
 }
 
 .feature {
   /* Add styles for each feature block */
+    border: 2px solid orange;
+    padding: 10px 30px;
+    border-radius: 5px;
 }
 
 .feature h3 {
-  /* Add styles for feature heading */
+  color: #FF7902;
 }
 
 .feature p {
