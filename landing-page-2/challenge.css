@@ -5,55 +5,104 @@
   box-sizing: border-box;
 }
 
+
+:root{
+  --boder: #00FF9D;
+  --textColor: #fff;
+  --black:#000;
+  --card:#2A2A2A;
+
+}
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #1A1A1A;
+  color: white;
 }
 
 /* Navbar styles */
 .navbar {
-  /* Add styles for the navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ padding: 10px;
 }
 
 .logo {
-  /* Add styles for the logo */
+ display: flex;
+ align-items: center;
+ color: var(--boder);
 }
 
 .logo img {
-  /* Add styles for the logo image */
+ border-radius: 25px;
+ border: 5px solid var(--boder);
+ margin-right: 20px;
 }
 
 .menu a {
-  /* Add styles for the navigation links */
+  text-decoration: none;
+  list-style-type: none;
+  color:var(--textColor) ;
+  padding-inline: 10px   ;
 }
 
 .menu a:hover {
-  /* Add hover styles for navigation links */
+  color: #00FF9D;
+  
 }
-
 /* Hero section styles */
 .hero {
-  /* Add styles for the hero section */
+  
+  height: 63vh;
+  background-color: #000;
+  position: relative;
 }
-
+.hero ::before{
+  background-image: url(./assets/chaicohort.png);
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+ height: inherit;
+ width: inherit;
+}
 .hero-content {
-  /* Add styles for the hero content container */
+  text-align: center;
+  padding-top: 5vh;
 }
 
 .hero-content h1 {
-  /* Add styles for the hero heading */
+ color: var(--boder);
+ margin-bottom: 10px;
 }
 
 .hero-content p {
   /* Add styles for the hero paragraph */
+  margin-block: 10px  ;
 }
 
 .hero-content img {
-  /* Add styles for the image in the hero section */
+  position: relative;
+  border-radius: 10px;
+  border: 2px solid var(--boder);
+  padding: 2px;
 }
 
 .enroll-button {
-  /* Add styles for the enroll button */
+  position: relative;
+    top: 34px;
+    left: -258px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: var(--boder);
 }
 
 .enroll-button:hover {
@@ -62,17 +111,27 @@ body {
 
 /* Highlights section styles */
 .highlights {
-  /* Add styles for the highlights section */
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 5vh;
+  }
+
 
 .highlight-card {
-  /* Add styles for each highlight card */
+  background-color: var(--card);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+  height: 150px;
 }
 
 .highlight-card h3 {
-  /* Add styles for highlight card headings */
+  color: var(--boder);
 }
 
 .highlight-card p {
-  /* Add styles for highlight card paragraphs */
+  font-family: 'Courier New', Courier, monospace;
 }
