@@ -23,12 +23,19 @@ for (let index = 1; index <= 20; index++) {
 let num = 50
 let sum = 0
 for (let index = 0; index <= num; index++) {
-    sum = sum + index
-    return sum
+    sum = index + sum
 }
-console.log(sum);
+// console.log(sum);
 
 // Find the sum of even numbers from 1 to 50.
+let num1 = 50
+let sumEven = 0
+for (let index = 1; index <= num1; index++) {
+    if (index % 2 === 0) {
+        sum = index + sum
+    }
+}
+console.log(sumEven);
 // Find the sum of odd numbers from 1 to 50.
 // Print numbers from 10 to 1 in reverse order.
 // Print the multiplication table of 5 using a loop.
