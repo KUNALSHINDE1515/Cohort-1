@@ -1,2 +1,1 @@
-
-console.log(p1)
+arr
