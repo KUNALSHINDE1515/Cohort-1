@@ -14,7 +14,7 @@ if (!Array.prototype.myForeach) {
         }
     }
 }
-
+    
 const ret = arr.myForeach( function(value,index){
     // console.log(`my for each value at index   ${index} is ${value} `);
     
