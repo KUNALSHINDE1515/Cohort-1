@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+<body>
+    <h1>Todo App</h1>
+    <div class="container">
+        <div>
+            <input id="TodoInput" placeholder="Enter Your Todo"/>
+            <button id="addbtn">Add</button>
+        </div>
+    </div>
+    <div>
+        <ul id="todo-items-contaienr">
+            <!-- <li>Got to gym <button>X</button> </li>
+            <li>Eat <button>X</button></li>
+            <li>Code <button>X</button></li> -->
+        </ul>
+    </div>
+</body>
+
+<script>
+    const inputBtn = document.querySelector('#TodoInput')
+    const addbtn = document.querySelector('#addbtn')
+    const ul = document.querySelector("#todo-items-contaienr")
+
+    addbtn.addEventListener('click', () => {
+        const value = inputBtn.value
+        
+        const li = document.createElement('li')  //<li></li>
+        li.innerText = value // li ke andar user value
+        const delbtn = document.createElement("button")
+        delbtn.innerText = "X"
+        delbtn.addEventListener('click', function () {
+            li.remove();
+        })
+        li.appendChild(delbtn)
+        ul.appendChild(li)
+        inputBtn.value = '';
+        
+    })
+</script>
+</html>

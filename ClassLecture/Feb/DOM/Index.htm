@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="red">Click</button>
+    <!-- <button id="white">white</button> -->
+</body>
+
+<script>
+
+function back(color){
+    document.body.style.backgroundColor = color;
+}
+
+
+const THEME = document.querySelector("#red")
+THEME.addEventListener('click', () => {
+    console.log(document.body.style.backgroundColor);
+    const currentColor = document.body.style.backgroundColor;
+    if (!currentColor || currentColor === "white") {
+        back('black');
+        THEME.innerHTML = "Dark MOde"
+    }else{
+        back("white")
+        THEME.innerHTML = "light mode"
+    }
+})
+
+
+</script>
+</html>
