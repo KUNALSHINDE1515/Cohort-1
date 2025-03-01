@@ -5,7 +5,6 @@ const input = document.querySelector("#nameInput")
 const showName = document.querySelector("#nameDisplay")
 
 input.addEventListener("input", (event) => {
-    // console.clear()
     showName.innerHTML = event.target.value
 })
 
