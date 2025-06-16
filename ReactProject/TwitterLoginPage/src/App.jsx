@@ -4,7 +4,6 @@ function App() {
  return(
  <div className="App">
   <div className="logo-box">
-    
     <img src='' alt="logo" className='logo' />
     <h2>Sign In to Twitter</h2>
     <button>
