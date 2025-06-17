@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: auto;
+    background-color: black;
+    color: #fff;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.HomePage{
+    background-image: url('./asssets/IN-en-20250609-TRIFECTA-perspective_32b70b51-20d4-46db-8a1a-3d5428be5f0e_large.jpg');
+    height: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
