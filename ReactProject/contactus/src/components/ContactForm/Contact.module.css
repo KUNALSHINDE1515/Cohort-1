@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    min-width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.top_btn{
+    display: flex;
+    gap: 32px;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contactForm form{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.form_control{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40px;
+}
+
+input{
+    height: 40px;
+    padding: 8px 0;
+}
+
+label{
+    font-size: 14px;
+    background-color: white;
+    padding: 0 10px;
+}
+
+.contactImg{
+    width: 70%;
+    height: 50%;
+}
+
+.contactImg img{
+    height: 100%;
+    width: 100%;
+}
