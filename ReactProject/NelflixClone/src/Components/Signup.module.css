@@ -1,0 +1,53 @@
+.sign_up{
+    height: 500px;
+    width: 400px;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 5px;
+    position: relative;
+    left: 600px;
+    bottom:-50px;
+    padding: 10px;
+}
+
+.all_container{
+    padding: 10px 20px;
+}
+
+.all_container h1{
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.all_container input{
+    padding: 15px 20px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    outline: 1px solid white;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+}
+
+.all_container button{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.btn{
+    background-color: red;
+    color: white;
+    font-weight: 800;
+}
+.all_container p{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}

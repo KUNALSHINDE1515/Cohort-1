@@ -5,7 +5,11 @@ function App() {
 
   return (
     <>
-    <HomePage />
+    <main>
+      <div className='Container'>
+        <HomePage />
+      </div>
+    </main>
     </>
   )
 }

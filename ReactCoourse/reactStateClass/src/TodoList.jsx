@@ -23,19 +23,42 @@ function TodoList() {
 
   let deleteTodo = (id) => {
     console.log("Task ID :", id);
-   
-    setTodos((prevTodos) => todos.filter((prevTodos) => prevTodos.id != id))
-    
 
-  }
+    setTodos((prevTodos) => todos.filter((prevTodos) => prevTodos.id != id));
+  };
+
+  let uppecaseAll = () => {
+    setTodos((preTodos) =>
+      preTodos.map((todo) => {
+        return {
+          ...todo,
+          task: todo.task.toUpperCase(),
+        };
+      })
+    );
+  };
+
+  let uppercaseOne = () => {
+    setTodos((preTodos) =>
+      preTodos.map((todo) => {
+        if (todo.id == todo.id) {
+          return {
+            ...todo,
+            task: todo.task.toUpperCase(),
+          };
+        } else {
+          return todo;
+        }
+      })
+    );
+  };
   return (
     <>
       <input
         placeholder="add a task"
         value={newTodo}
         onChange={updateTaskValue}
-      >
-      </input>
+      ></input>
       <br></br>
       <button onClick={addNewTask}>Add Task</button>
       <br></br>
@@ -47,10 +70,12 @@ function TodoList() {
           <li key={todo.id}>
             <span>{todo.task}</span>
             &nbsp;&nbsp;&nbsp;
-            <button onClick={() => (deleteTodo(todo.id))}>delete</button>
+            <button onClick={() => deleteTodo(todo.id)}>delete</button>
+            <button onClick={() => uppercaseOne(todo.id)}>uppercaseOne</button>
           </li>
         ))}
       </ul>
+      <button onClick={uppecaseAll}>UpperCaseAll</button>
     </>
   );
 }

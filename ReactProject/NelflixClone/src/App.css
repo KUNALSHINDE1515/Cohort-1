@@ -3,18 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+.Container{
+    position: relative;
     height: 100vh;
-    margin: auto;
+    width: 100vw;
     background-color: black;
     color: #fff;
-    max-width: 1440px;
-    margin: auto;
-}
-
-.HomePage{
-    background-image: url('./asssets/IN-en-20250609-TRIFECTA-perspective_32b70b51-20d4-46db-8a1a-3d5428be5f0e_large.jpg');
-    height: inherit;
+    background-image: url(./asssets/IN-en-20250609-TRIFECTA-perspective_32b70b51-20d4-46db-8a1a-3d5428be5f0e_large.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    /* opacity: 0.3; */
+    background-color: black;
+    z-index: 1;
+
 }

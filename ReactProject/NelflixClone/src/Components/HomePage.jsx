@@ -1,20 +1,14 @@
-import React from 'react'
-
-function TextContainer() {
-    return (
-        <>
-        <div>
-            <h1>Neflix</h1>
-        </div>
-        </>
-    )
-}
+import styles from "./Home.module.css"
+import SignUp from "./SignUp";
 function HomePage() {
     return (
         <>
-        <div className="mainContainer">
-            <div className='HomePage'>
-            <TextContainer />
+        <div className={styles.mainContainer}>
+            <div className={styles.HomePage}>
+                <nav className={styles.navbar}>
+                    <h1>Nelflix</h1>
+                </nav>
+                <SignUp />
         </div>
         </div>
         </>
